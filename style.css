@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dosis:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* :root {
+    --primary-color: #7b5fff;
+    --secondary-color: #ff7b00;
+    --bg-light: #f8f8f8;
+    --text-dark: #222;
+    --text-light: #7c7878;
+    --gradient: linear-gradient(349deg, #715cee, #b1a5f8);
+}*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background: linear-gradient(180deg, #a196ef1f, #9e92f50f);
+    color: #222
+}
+body::-webkit-scrollbar{widows: 10px;}
+body::-webkit-scrollbar-thumb {
+    background: #7b5fff;
+    border-radius: 10px;
+}
+
+.commonBtn {
+    padding: 15px 30px;
+    font-size: 16px;
+    background: linear-gradient(349deg, #715cee, #b1a5f8);
+    border-radius: 23px;
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 600;
+    filter: drop-shadow(2px 5px 8px #b1a5f8);
+    border: none;
+    transition: 0.4s ease-in-out;
+    text-decoration: none;
+}
+
+.logo {
+    color: #8FB32B;
+    
+}
