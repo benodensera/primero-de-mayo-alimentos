@@ -40,7 +40,44 @@ body::-webkit-scrollbar-thumb {
     text-decoration: none;
 }
 
+.commonBtn:hover {
+    background: linear-gradient(349deg, #9383f5, #b1a5f8);
+    color: white;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+#mainHeader.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.9);
+    width: 100%;
+    z-index: 9999;
+    padding: 10px 100px;
+}
+
+#mainHeader {
+    transition: all 0.3s ease;
+}
+
 .logo {
+    font-size: 20px; 
+    font-weight: bold;
+}
+
+.logo i {
     color: #8FB32B;
-    
+}
+
+.title {
+    font-weight: 600;
 }
