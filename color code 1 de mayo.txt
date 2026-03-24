@@ -1,4 +1,0 @@
-
-primary #91AD34
-secondary #187B42
-th #CD1319
