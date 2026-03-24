@@ -105,6 +105,7 @@ nav ul {
 nav ul li a {
     text-decoration: none;
     color: #222;
+    font-weight: 500;
     padding: 8px 12px;
 }
 
@@ -281,11 +282,13 @@ nav li a:hover {
 .courses button {
     height: 45px;
     margin-top: 65px;
+    width: 80px;
+    cursor: pointer;
 }
 
 .courseSection {
     max-width: 1200px;
-    margin: auto;
+    margin: 90px auto;
 }
 
 .courses {
@@ -301,7 +304,7 @@ nav li a:hover {
     border-color: #187B42;
     border-style: solid;
     border-width: thin;
-    padding: 25px;
+    padding: 25px 25px 45px 25px;
     border-radius: 9px;
     flex: 1 1 200px;
     text-align: left;
@@ -332,7 +335,119 @@ nav li a:hover {
     bottom: 15px;
     border: none;
     height: 1px;
-    background: #8a8a8a94;
+    background: #187b412a;
     inset-inline: 0;
     margin-inline: auto;
 }
+
+.browseAll {
+    margin-top: 10px;
+}
+
+
+
+.aboutSection {
+    display: flex;
+    justify-content: space-around;
+    gap: 100px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 120px auto;
+}
+
+.imageBox {
+    flex: 1 1 500px;
+    position: relative;
+}
+
+.imageBox img {
+    width: 100%;
+    border-radius: 9px;
+    display: block;
+}
+
+.boxCorner {
+    width: 100px;
+    height: 100px;
+    background: #91AD34;
+    position: absolute;
+    top: -12px;
+    right: -12px;
+    z-index: -1;
+    border-radius: 9px;
+}
+
+.textBox {
+    flex: 1 1 500px;
+}
+
+.textBox .heading span {
+    color: #91AD34;
+}
+
+.textBox .highlight {
+    color: #222;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 24px;
+}
+
+.textBox p {
+    font-size: 16px;
+    color: #222;
+    margin: 15px;
+    line-break: 1.5;
+}
+
+.textBox button {
+    cursor: pointer;
+}
+
+
+
+.newsSection {
+    color: #222;
+    border-radius: 15px;
+    border-width: thin;
+    padding: 40px 50px;
+    max-width: 900px;
+    margin: 90px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    box-shadow: 3px 3px 15px #33333364;
+}
+
+.newsText {
+    flex: 1 1 300px;
+}
+
+.newsText h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.newsBtn {
+    background: #fff;
+    color: #222;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 9px;
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+    box-shadow: 3px 3px 7px #33333364;
+}
+
+.newsBtn:hover {
+    background: #91AD34;
+    color: #fff;
+}
+
+
+
