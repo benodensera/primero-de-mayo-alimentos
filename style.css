@@ -20,7 +20,11 @@ body {
     background: linear-gradient(180deg, #a196ef1f, #9e92f50f);
     color: #222
 }
-body::-webkit-scrollbar{widows: 10px;}
+
+body::-webkit-scrollbar{
+    widows: 10px;
+}
+
 body::-webkit-scrollbar-thumb {
     background: #91AD34;
     border-radius: 10px;
@@ -29,20 +33,23 @@ body::-webkit-scrollbar-thumb {
 .commonBtn {
     padding: 9px 15px;
     font-size: 16px;
-    background: linear-gradient(349deg, #91AD34, #187B42);
+    background-color: transparent;
+    /*background: linear-gradient(349deg, #91AD34, #187B42);*/
     border-radius: 6px;
-    color: white;
+    color: black;
     letter-spacing: 1px;
     font-weight: 600;
-    filter: drop-shadow(2px 3px 5px #187b4177);
-    border: none;
-    transition: 0.3s ease-in-out;
-    text-decoration: none;
+    /*filter: drop-shadow(2px 3px 5px #187b4177);*/
+    /*border: none;*/
+    border-color: #91AD34;
+    border-style: solid;
+    /*transition: 0.3s ease-in-out;*/
+    /*text-decoration: none;*/
 }
 
 .commonBtn:hover {
     background: linear-gradient(349deg, #91ad34a5, #187b4177);
-    color: #3e3e3e;
+    color: #4f4f4f;
 }
 
 header .container {
@@ -76,10 +83,17 @@ header .container {
 
 .logo i {
     color: #91AD34;
+    display: none;
+}
+
+.logoImg {
+    height: 80px;
+    position: relative;
 }
 
 .title {
     font-weight: 600;
+    display: none;
 }
 
 nav ul {
@@ -113,12 +127,14 @@ nav li a:hover {
 
 .stats .commonBtn {
     height: 45px;
+    cursor: pointer;
 }
 
 .heading {
     font-size: 42px;
     font-weight: 700;
     color: #222;
+    letter-spacing: -3px;
     margin-bottom: 20px;
 }
 
@@ -126,7 +142,7 @@ nav li a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 20px;
+    padding: 0 20px;
     max-width: 1200px;
     margin: auto;
     flex-wrap: wrap;
@@ -181,16 +197,16 @@ nav li a:hover {
 
 .heroIcon1 {
     left: 0px;
-    bottom: 10px;
-    animation: slideDown 1s ease-in-out infinite alternate;
+    bottom: 50px;
+    animation: slideDown 2s ease-in-out infinite alternate;
     height: 45px;
     border-radius: 9px!important;
 }
 
 .heroIcon2 {
     right: 0px;
-    top: 10px;
-    animation: slideRight 1s ease-in-out infinite alternate;
+    top: 50px;
+    animation: slideRight 2s ease-in-out infinite alternate;
     height: 45px;
     border-radius: 9px!important;
 }
