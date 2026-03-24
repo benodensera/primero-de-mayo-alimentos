@@ -157,7 +157,7 @@ nav li a:hover {
 }
 
 .heading span {
-    color: #187B42;
+    color: #CD1319;
 }
 
 #courseCount,
@@ -274,4 +274,65 @@ nav li a:hover {
     display: flex;
     gap: 40px;
     margin-top: 20px;
+}
+
+
+
+.courses button {
+    height: 45px;
+    margin-top: 65px;
+}
+
+.courseSection {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.courses {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.course {
+    position: relative;
+    border-color: #187B42;
+    border-style: solid;
+    border-width: thin;
+    padding: 25px;
+    border-radius: 9px;
+    flex: 1 1 200px;
+    text-align: left;
+    color: #222;
+    /*filter: drop-shadow(5px 4px 10px #949494);*/
+    transition: 0.3s ease-in-out;
+    box-shadow: 3px 3px 10px #33333364;
+}
+
+.course:hover {
+    transform: scale(1.05);
+}
+
+.course i {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 25px;
+}
+
+.course span {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.course hr {
+    position: absolute;
+    width: 60%;
+    bottom: 15px;
+    border: none;
+    height: 1px;
+    background: #8a8a8a94;
+    inset-inline: 0;
+    margin-inline: auto;
 }
