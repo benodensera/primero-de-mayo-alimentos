@@ -456,7 +456,7 @@ nav li a:hover {
     color: #333;
 }
 
-.testimonialSection {
+.testimonial-section {
     text-align: center;
     padding: 50px;
 }
@@ -470,13 +470,13 @@ nav li a:hover {
 
 .testimonial-wrapper {
     display: flex;
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease;
 }
 
 .testimonial {
     background: #fff;
     border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
     padding: 20px;
     margin: 10px;
     flex: 0 0 calc(50% - 20px);
@@ -519,8 +519,8 @@ nav li a:hover {
     margin: 2px 0 8px;
 }
 
-.stars {
-    color: #187B42;
+.stars i {
+    color: #FFD700;
     font-size: 16px;
 }
 
@@ -528,13 +528,13 @@ nav li a:hover {
     position: absolute;
     top: 0;
     right: 0;
-    font-size: 4rem;
+    font-size: 1rem;
     color: #187B42;
 }
 
 .bottom-text {
     font-size: 14px;
-    line-break: 1.5;
+    line-height: 1.5;
     text-align: left;
 }
 
@@ -547,12 +547,12 @@ nav li a:hover {
     display: inline-block;
     width: 10px;
     height: 10px;
-    background: red;
+    background: #91AD34;
     border-radius: 50%;
     margin: 0 5px;
     cursor: pointer;
 }
 
-.dot .actiive {
+.dot.active {
     background: #187B42;
 }
