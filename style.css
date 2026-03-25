@@ -461,6 +461,10 @@ nav li a:hover {
     padding: 50px;
 }
 
+.testimonial-section span {
+    color: #91AD34;
+}
+
 .testimonial-container {
     max-width: 1000px;
     margin: auto;
@@ -555,4 +559,42 @@ nav li a:hover {
 
 .dot.active {
     background: #187B42;
+}
+
+
+
+.specialist-section {
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.specialist-container {
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.specialist-image img {
+    max-width: 100%;
+    height: auto;
+    width: 500px;
+}
+
+.specialist-content {
+    max-width: 600px;
+}
+
+.specialist-content span {
+    color: #91AD34;
+}
+
+.specialist-content p {
+    font-size: 16px;
+    color: #222;
+    line-break: 1.6;
+    margin-bottom: 30px;
 }
