@@ -582,6 +582,7 @@ nav li a:hover {
     max-width: 100%;
     height: auto;
     width: 500px;
+    box-shadow: 5px 4px 10px #33333364;
 }
 
 .specialist-content {
