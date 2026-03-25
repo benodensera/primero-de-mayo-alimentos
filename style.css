@@ -451,3 +451,108 @@ nav li a:hover {
 
 
 
+
+.stars i {
+    color: #333;
+}
+
+.testimonialSection {
+    text-align: center;
+    padding: 50px;
+}
+
+.testimonial-container {
+    max-width: 1000px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.testimonial-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.testimonial {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    margin: 10px;
+    flex: 0 0 calc(50% - 20px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.top-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.image {
+    flex-shrink: 0;
+}
+
+.image img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.info {
+    margin-left: 15px;
+    text-align: left;
+    flex-grow: 1;
+    position: relative;
+}
+
+.info h3 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.info .position {
+    font-size: 14px;
+    margin: 2px 0 8px;
+}
+
+.stars {
+    color: #187B42;
+    font-size: 16px;
+}
+
+.quote-icon1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 4rem;
+    color: #187B42;
+}
+
+.bottom-text {
+    font-size: 14px;
+    line-break: 1.5;
+    text-align: left;
+}
+
+.dots {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: red;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.dot .actiive {
+    background: #187B42;
+}

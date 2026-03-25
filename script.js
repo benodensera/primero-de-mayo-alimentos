@@ -16,5 +16,27 @@ function animateCounter(id, target, speed){
         }, speed)
     }
 
-    animateCounter('courseCount', 800, 10);
-    animateCounter('studentCount', 210, 20);
+animateCounter('courseCount', 800, 10);
+animateCounter('studentCount', 210, 20);
+
+
+
+const wrapper = document.getElementById('testimonialWrapper');
+const dots = document.querySelectorAll('.dot');
+let currentSlide = 0;
+const totalSlides = 2;
+
+function moveToSlide(index){
+    currentSlide = index;
+    const slideWidth = wrapper.clientWidth;
+    wrapper.style.transform = `translateX(-${index * 100}%)`;
+    dots.forEach(dot => dot.classList.remove('active'));
+    dots[index].classList.add('active');
+    setInterval(() => {
+        currentSlide = (currentSlide + 1) % totalSlides;
+        moveToSlide(currentSlide);
+    }, 5000);
+}
+
+
+
