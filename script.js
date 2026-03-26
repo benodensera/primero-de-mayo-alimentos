@@ -38,6 +38,32 @@ function moveToSlide(index){
     }, 5000);
 }
 
+/*window.onscroll = () => {
+    const scrollY = window.scrollY,
+        header = document.getElementById('mainHeader'),
+        header = document.getElementById('backToTop');
+    header.classList.toggle('fixed', scrollY > 100);
+    topBtn.style.display = scrollY > 300 ? 'block' : 'none';
+};
+
+document.getElementById('backToTop')?.addEventListener('click', () => {
+    window.scrollTo({top:0, behaviour:'smooth'});    
+})*/
+
+const topBtn = document.getElementById('backToTop');
+window.onscroll = () => {
+    if (topBtn) {
+        topBtn.style.display = window.scrollY > 2000 ? 'block' : 'none';
+    }
+};
+
+topBtn?.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0, 
+        behavior: 'smooth'
+    });    
+});
+
 
 
 

@@ -9,6 +9,10 @@
     --gradient: linear-gradient(349deg, #715cee, #b1a5f8);
 }*/
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -711,4 +715,99 @@ nav li a:hover {
     background: #fff;
     border: 3px #91AD34;
     color: #91AD34;
+}
+
+
+
+@media (max-width:768px) {
+    #mainHeader.fixed{
+        padding: 10px 21px;
+    }
+    nav ul {
+        display: none;
+        flex-direction: column;
+        border-radius: 9px;
+        gap: 10px;
+        background: #ffffff;
+        box-shadow: 5px 4px 10px rgb(255, 255, 255);
+        position: absolute;
+        top: 60px;
+        right: 50px;
+        padding: 10px;
+        box-shadow: 8px;
+    }
+    nav ul li {
+        padding: 10px;
+    }
+    nav ul.active {
+        display: flex;
+        z-index: 9999;
+    }
+    .menu-toggle {
+        display: flex;
+    }
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .heroHeading {
+        font-size: 2rem;
+    }
+    .circle-container {
+        display: none;
+    }
+    .courseSection {
+        padding: 20px;
+    }
+    .stats {
+        flex-direction: column;
+    }
+    .circle-container {
+        display: ;
+    }
+    .courses {
+        flex-direction: column;
+        align-items: center;
+    }
+    .courses button {
+        margin-top: 15px;
+    }
+    .course {
+        width: 80%;
+        max-height: 150px;
+    }
+    .aboutSection {
+        margin: -90px 0 0 0;
+        padding: 20px;
+    }
+    .newsSection {
+        margin: 60px 15px;
+        padding: 20px;
+    }
+    .testimonial-section {
+        padding: 20px;
+    }
+    .testimonial {
+        flex: 0 0 calc(100% - 20px);
+    }
+    .quote-icon1 {
+        display: none;
+    }
+    .specialist-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .specialist-image img {
+        width: 100%;
+        max-width: 300px;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    /*#backToTop {
+        bottom: 30px;
+        right: 130px;
+    }*/
 }
