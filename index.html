@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,9 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/297131ce3c.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
+
     <header>
         <div id="mainHeader">
             <div class="container">
@@ -33,18 +36,59 @@
         </div>
     </header>
 
-    <section class="hero">
-        <div class="hero-text" data-aos="fade-right">
+    <section id="quizOverlay">
+        <div class="quizSection" id="quizSection">
+            <button id="closeQuizBtn">✕</button>
+            <div class="quiz-container">
+                <div class="quiz-wrapper" id="quizWrapper">
+                    <div class="quiz-slide" data-correct="0">
+                        <h3>¿Cuál es la mejor forma de conservar frutas?</h3>
+                        <button class="quiz-option">Refrigerarlas</button>
+                        <button class="quiz-option">Dejarlas al sol</button>
+                        <button class="quiz-option">En bolsa abierta</button>
+                    </div>
+                    <div class="quiz-slide" data-correct="1">
+                        <h3>¿Qué método elimina bacterias?</h3>
+                        <button class="quiz-option">Congelar</button>
+                        <button class="quiz-option">Hervir</button>
+                        <button class="quiz-option">Secar</button>
+                    </div>
+                    <div class="quiz-slide" data-correct="1">
+                        <h3>¿Cuánto dura un alimento refrigerado?</h3>
+                        <button class="quiz-option">1 día</button>
+                        <button class="quiz-option">Depende del alimento</button>
+                        <button class="quiz-option">1 mes</button>
+                    </div>
+                    <div class="quiz-slide" id="resultSlide">
+                        <div id="resultsContainer"></div>
+                        <button id="restartQuizBtn" class="commonBtn">
+                            Rehacer test
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="quiz-controls">
+                <button id="prevBtn">← Regresar</button>
+                <button id="nextBtn">Siguiente →</button>
+                <button id="finishBtn" style="display:none;">Finalizar</button>
+            </div>
+            <div class="quiz-progress">
+                <div class="quiz-progress-bar" id="quizProgressBar"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hero" id="heroSection">
+        <div class="hero-text">
             <h1 class="heading heroHeading">
                 Conservación y<br>Procesamiento de<br><span>Alimentos</span>
             </h1>
             <p>
                 Formación integral, infraestructura adecuada y una oferta académica diseñada para el desarrollo
             </p>
-
             <div class="stats">
-                <button class="commonBtn">
-                    Curso
+                <button class="commonBtn" id="openQuizBtn">
+                    Haz el Quiz
                 </button>
                 <div>
                     <span id="courseCount">0</span>+<br>
@@ -56,8 +100,7 @@
                 </div>
             </div>
         </div>
-
-        <div class="hero-image" data-aos="fade-left">
+        <div class="hero-image">
             <img src="images/user.png" class="userImage">
             <img src="images/academic.png" class="heroIcon1">
             <img src="images/students.png" class="heroIcon2">
@@ -130,7 +173,7 @@
         <small data-aos="zoom-in">Reseñas Destacadas</small>
         <h2 class="heading" data-aos="zoom-in">Reseñas de <span>Estudiantes y Graduados</span></h2>
 
-        <div class="testimonial-container" data-aos="fade-right">    
+        <div class="testimonial-container" data-aos="fade-right">
             <div class="testimonial-wrapper" id="testimonialWrapper">
 
                 <div class="testimonial">
@@ -151,7 +194,7 @@
                             <div class="quote-icon1"></div>
                         </div>
                     </div>
-                    <p>Antes desperdiciaba mucha comida porque no sabía cómo 
+                    <p>Antes desperdiciaba mucha comida porque no sabía cómo
                         guardarla bien, pero ahora todo me dura fresco
                     </p>
                 </div>
@@ -174,7 +217,7 @@
                             <div class="quote-icon1"></div>
                         </div>
                     </div>
-                    <p>Antes desperdiciaba mucha comida porque no sabía cómo 
+                    <p>Antes desperdiciaba mucha comida porque no sabía cómo
                         guardarla bien, pero ahora todo me dura fresco
                     </p>
                 </div>
@@ -197,7 +240,7 @@
                             <div class="quote-icon1"></div>
                         </div>
                     </div>
-                    <p>Antes desperdiciaba mucha comida porque no sabía cómo 
+                    <p>Antes desperdiciaba mucha comida porque no sabía cómo
                         guardarla bien, pero ahora todo me dura fresco
                     </p>
                 </div>
@@ -220,7 +263,7 @@
                             <div class="quote-icon1"></div>
                         </div>
                     </div>
-                    <p>Antes desperdiciaba mucha comida porque no sabía cómo 
+                    <p>Antes desperdiciaba mucha comida porque no sabía cómo
                         guardarla bien, pero ahora todo me dura fresco
                     </p>
                 </div>
@@ -238,13 +281,13 @@
     <section class="specialist-section">
         <div class="specialist-container">
             <div class="specialist-image" data-aos="fade-right">
-                <img src="images/specialist.jpg" alt="">                    
+                <img src="images/specialist.jpg" alt="">
             </div>
             <div class="specialist-content" data-aos="fade-left">
                 <h1 class="heading">Conviértete en un <span>Especialista</span></h1>
                 <p>
-                    Profesional técnico o ingeniero (tecnólogo de alimentos) 
-                    enfocado en garantizar la seguridad, calidad, inocuidad y 
+                    Profesional técnico o ingeniero (tecnólogo de alimentos)
+                    enfocado en garantizar la seguridad, calidad, inocuidad y
                     vida útil de los productos.
                 </p>
                 <a href="#" class="commonBtn">Empieza hoy!</a>
@@ -254,7 +297,7 @@
 
     <footer class="footer">
         <div class="footer-bottom">
-            <div class="footer-logo">   
+            <div class="footer-logo">
                 <i class="fa-solid fa-location-dot"></i>
                 <h4>Yantzaza</h4>
             </div>
@@ -272,7 +315,7 @@
         </div>
         <div class="copyright">
             copyright @2026
-            <a href="#">Primero de Mayo</a> 
+            <a href="#">Primero de Mayo</a>
         </div>
     </footer>
 
@@ -281,5 +324,7 @@
     </button>
 
     <script src="script.js"></script>
+
 </body>
+
 </html>
