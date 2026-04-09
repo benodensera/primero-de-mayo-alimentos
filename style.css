@@ -40,8 +40,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .commonBtn:hover {
-    background: linear-gradient(349deg, #91ad34a5, #187b4177);
-    color: #4f4f4f;
+    background: #91AD34;
+    color: #fff;
 }
 
 header .container {
@@ -102,7 +102,7 @@ nav ul li a {
 }
 
 nav li a:hover {
-    color: #187B42;
+    color: #91AD34;
 }
 
 .menu-toggle {
@@ -299,7 +299,6 @@ nav li a:hover {
     flex: 1 1 200px;
     text-align: left;
     color: #222;
-    /*filter: drop-shadow(5px 4px 10px #949494);*/
     transition: 0.3s ease-in-out;
     box-shadow: 3px 3px 10px #33333364;
 }
@@ -413,7 +412,7 @@ nav li a:hover {
 .newsText h2 {
     font-size: 2rem;
     font-weight: 600;
-    color: #000000;
+    color: #222;
     margin-bottom: 10px;
 }
 
@@ -433,10 +432,6 @@ nav li a:hover {
 .newsBtn:hover {
     background: #91AD34;
     color: #fff;
-}
-
-.stars i {
-    color: #333;
 }
 
 .testimonial-section {
@@ -641,7 +636,7 @@ nav li a:hover {
 }
 
 .footer-links a:hover {
-    color: #187B42;
+    color: #91AD34;
 }
 
 .social-icons {
@@ -852,7 +847,7 @@ nav li a:hover {
 }
 
 .quiz-dot.active {
-    background: #187B42;
+    background: #91AD34;
 }
 
 .quiz-controls {
@@ -870,17 +865,17 @@ nav li a:hover {
 }
 
 .correct {
-    color: green;
+    color: #91AD34;
 }
 
 .incorrect {
-    color: red;
+    color: #CD1319;
 }
 
 .quiz-option.selected {
-    background: #28a745 !important;
+    background: #91AD34 !important;
     color: #fff !important;
-    border-color: #28a745 !important;
+    border-color: #91AD34 !important;
 }
 
 .correct {
@@ -889,7 +884,7 @@ nav li a:hover {
 }
 
 .incorrect {
-    color: #dc3545;
+    color: #CD1319;
     font-weight: bold;
 }
 
@@ -921,7 +916,7 @@ nav li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: transparent; /* ❌ sin oscuro */
+    background: transparent;
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.3s ease;
@@ -968,7 +963,7 @@ nav li a:hover {
 }
 
 #closeQuizBtn:hover {
-    color: #187B42;
+    color: #91AD34;
 }
 
 #nextBtn {
@@ -978,7 +973,7 @@ nav li a:hover {
 .quiz-progress {
     width: 100%;
     height: 8px;
-    background: #eee;
+    background: #fff;
     border-radius: 10px;
     margin-bottom: 15px;
     max-width: 90px;
@@ -999,7 +994,7 @@ nav li a:hover {
 .quiz-progress-bar {
     height: 100%;
     width: 0%;
-    background: linear-gradient(90deg, #91AD34, #187B42);
+    background: #CD1319;
     border-radius: 10px;
     transition: width 0.4s ease;
 }
