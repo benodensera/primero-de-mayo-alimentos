@@ -1100,12 +1100,8 @@ nav li a:hover {
 
 .tabla th,
 .tabla td {
-  border: 1px solid #222;
+  border: 1px solid #22222225;
   padding: 6px 8px;
-}
-
-.tabla th {
-  text-align: center;
 }
 
 .categoria {
