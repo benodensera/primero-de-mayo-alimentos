@@ -393,26 +393,31 @@ nav li a:hover {
 .newsSection {
     color: #222;
     border-radius: 15px;
-    border-width: thin;
     padding: 40px 50px;
     max-width: 900px;
     margin: 90px auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
     box-shadow: 3px 3px 15px #33333364;
+    overflow: hidden;
+}
+
+.newsTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 20px;
 }
 
 .newsText {
-    flex: 1 1 300px;
+    flex: 1;
+}
+
+.newsBtn {
+    flex-shrink: 0;
 }
 
 .newsText h2 {
     font-size: 2rem;
-    font-weight: 600;
-    color: #222;
     margin-bottom: 10px;
 }
 
@@ -422,16 +427,60 @@ nav li a:hover {
     padding: 15px 30px;
     border: none;
     border-radius: 9px;
-    font-weight: 500;
-    font-size: 1rem;
     cursor: pointer;
-    transition: background 0.3s;
     box-shadow: 3px 3px 7px #33333364;
+    transition: 0.3s;
 }
 
 .newsBtn:hover {
-    background: #91AD34;
-    color: #fff;
+    color: #91AD34;
+}
+
+.newsBtn i {
+    margin-right: 9px;
+    animation: slideSide 1s ease-in-out infinite alternate;
+}
+
+@keyframes slideSide {
+    from {
+        transform: translateX('0') rotate(90deg);
+    }
+    to {
+        transform: translateX('25px') rotate(90deg);
+    }
+}
+
+.tabla-wrapper {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+
+.tabla-wrapper.active {
+    max-height: 1000px; 
+    margin-top: 25px;
+}
+
+.tabla {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 3px 3px 10px #33333350;
+}
+
+.tabla th,
+.tabla td {
+    padding: 10px;
+    text-align: left;
+}
+
+.tabla td.num {
+    text-align: center;
+}
+
+.tabla .total {
+    font-weight: bold;
 }
 
 .testimonial-section {
@@ -1002,3 +1051,99 @@ nav li a:hover {
 #restartQuizBtn {
     margin: 0;
 }
+
+
+
+
+
+.accordion {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.accordion-btn {
+    display: block;
+    margin: 0 auto;
+  width: 250px;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 9px;
+  background: transparent;
+  transition: 0.3s;
+}
+
+.accordion-btn:hover {
+  background: #91AD34;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  margin-top: 10px;
+}
+
+.accordion-content.active {
+  max-height: 1000px;
+}
+
+.tabla {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.tabla th,
+.tabla td {
+  border: 1px solid #222;
+  padding: 6px 8px;
+}
+
+.tabla th {
+  text-align: center;
+}
+
+.categoria {
+  width: 200px;
+}
+
+.tabla .num {
+    text-align: center;
+}
+
+
+.total td {
+  font-weight: bold;
+}
+
+.accordion-btn i {
+    animation: slideSide 1s ease-in-out infinite alternate;
+    margin-right: 15px;
+}
+
+@keyframes slideSide {
+    from {
+        transform: translateX(0) rotate(90deg) ;
+    }
+    to {
+        transform: translateX(6px) rotate(90deg);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

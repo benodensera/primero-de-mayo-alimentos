@@ -268,3 +268,10 @@ function resetQuiz(){
     finishBtn.style.display = 'none';
     progressBar.style.width = "0%";
 }
+
+
+
+function toggleTabla() {
+    const tabla = document.getElementById("tablaWrapper");
+    tabla.classList.toggle("active");
+}
