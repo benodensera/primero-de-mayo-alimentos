@@ -785,7 +785,7 @@ nav li a:hover {
         flex-direction: column;
     }
     .circle-container {
-        display: ;
+        display: none;
     }
     .courses {
         flex-direction: column;
