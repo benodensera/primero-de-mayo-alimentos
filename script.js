@@ -105,9 +105,15 @@ function showQuizSlide(index){
     }
 
     const totalQuestions = quizSlides.length - 1; 
-    const progress = (index / totalQuestions) * 100;
 
-    progressBar.style.width = `${progress}%`;
+    if(index === quizSlides.length - 1){
+        document.querySelector('.quiz-progress').style.display = 'none';
+    } else {
+        document.querySelector('.quiz-progress').style.display = 'block';
+
+        const progress = (index / totalQuestions) * 100;
+        progressBar.style.width = `${progress}%`;
+    }
 }
 
 document.querySelectorAll('.quiz-option').forEach((btn) => {
@@ -153,7 +159,7 @@ finishBtn.addEventListener('click', () => {
     prevBtn.style.display = 'none';
     nextBtn.style.display = 'none';
     finishBtn.style.display = 'none';
-    progressBar.style.width = "100%";
+    
 });
 
 
@@ -242,6 +248,7 @@ closeQuizBtn.addEventListener('click', () => {
     resetQuiz();
 
     document.body.style.overflow = 'auto';
+    document.querySelector('.quiz-progress').style.display = 'block';
 });
 
 

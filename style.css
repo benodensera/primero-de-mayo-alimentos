@@ -1161,6 +1161,16 @@ nav li a:hover {
     justify-content: space-between;
 }
 
+.contactInfo a {
+    display: block;
+    text-decoration: none;
+    color: #222;
+}
+
+.contactInfo a:hover {
+    color: #91AD34;
+}
+
 .contactInfo h2 {
     margin-bottom: 30px;
 }
@@ -1250,9 +1260,9 @@ nav li a:hover {
 }
 
 .inputBox input:focus + label,
-.inputBox input:valid + label,
+.inputBox input:not(:placeholder-shown) + label,
 .inputBox textarea:focus + label,
-.inputBox textarea:valid + label {
+.inputBox textarea:not(:placeholder-shown) + label {
     top: -10px;
     font-size: 12px;
     color: #91AD34;
@@ -1293,8 +1303,29 @@ nav li a:hover {
 }
 
 
+/* Email Recibido */
+.thanks-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 0;
+}
 
+.thanks-section a {
+    text-decoration: none;
+    color: #222;
+    margin-top: 50px;
+}
 
+.thanks-section a:hover {
+    color: #91AD34;
+}
+
+.thanks-section a i {
+    padding-right: 9px;
+}
 
 
 
