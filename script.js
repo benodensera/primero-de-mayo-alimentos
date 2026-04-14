@@ -104,7 +104,7 @@ function showQuizSlide(index){
         finishBtn.style.display = 'none';
     }
 
-    const totalQuestions = quizSlides.length - 1; // sin resultados
+    const totalQuestions = quizSlides.length - 1; 
     const progress = (index / totalQuestions) * 100;
 
     progressBar.style.width = `${progress}%`;
@@ -127,7 +127,7 @@ document.querySelectorAll('.quiz-option').forEach((btn) => {
             o.disabled = true;
         });
 
-        btn.classList.add('selected'); // ✅ solo verde
+        btn.classList.add('selected');
     });
 });
 
@@ -275,3 +275,41 @@ function toggleTabla() {
     const tabla = document.getElementById("tablaWrapper");
     tabla.classList.toggle("active");
 }
+
+
+
+// Contact Form 
+
+const form = document.getElementById("contactForm");
+
+form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    const data = {
+        nombre: form[0].value,
+        apellido: form[1].value,
+        email: form[2].value,
+        celular: form[3].value,
+        mensaje: form[4].value
+    };
+
+    try {
+        const response = await fetch("https://formspree.io/f/xaqaygej", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(data)
+        });
+
+        if (response.ok) {
+            alert("Mensaje enviado correctamente ✅");
+            form.reset();
+        } else {
+            alert("Error al enviar ❌");
+        }
+
+    } catch (error) {
+        alert("Error de conexión ❌");
+    }
+});

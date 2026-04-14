@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/297131ce3c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header>
+        <div id="mainHeader">
+            <div class="container">
+                <div class="logo">
+                    <img src="./images/logo 1 mayo.png" alt="" class="logoImg">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <strong class="title">Primero de Mayo</strong>
+                </div>
+                <nav>
+                    <div class="menu-toggle" onclick="toggleMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul id="menu">
+                        <li><a href="#">Cursos</a></li>
+                        <li><a href="#">Profesores</a></li>
+                        <li><a href="#">Noticias</a></li>
+                        <li><a href="#" class="commonBtn">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="contactSection">
+        <div class="contactContainer">
+            <div class="contactInfo">
+                <h2>Información de contacto</h2>
+                <div class="infoItem">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>Av. Ejemplo 123, Ciudad, País</p>
+                </div>
+                <div class="infoItem">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>correo@ejemplo.com</p>
+                </div>
+                <div class="infoItem">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>+593 99 123 4567</p>
+                </div>
+                <div class="socialIcons">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+                </div>
+            </div>
+            <div class="contactForm">
+                <h2>Escríbenos</h2>
+                <form action="https://formspree.io/f/xaqaygej" method="POST">
+
+                    <div class="row">
+                        <div class="inputBox">
+                            <input type="text" name="nombre" required>
+                            <label>Nombre</label>
+                        </div>
+
+                        <div class="inputBox">
+                            <input type="text" name="apellido" required>
+                            <label>Apellido</label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="inputBox">
+                            <input type="email" name="email" required>
+                            <label>Email</label>
+                        </div>
+
+                        <div class="inputBox">
+                            <input type="text" name="celular">
+                            <label>Celular</label>
+                        </div>
+                    </div>
+
+                    <div class="inputBox full">
+                        <textarea name="message" required></textarea>
+                        <label>Mensaje</label>
+                    </div>
+
+                    <!-- Opcional: evitar spam -->
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="thanks.html">
+                    <button type="submit">Enviar Mensaje</button>
+                    
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-bottom">
+            <div class="footer-logo">
+                <i class="fa-solid fa-location-dot"></i>
+                <h4>Yantzaza</h4>
+            </div>
+            <div class="footer-links">
+                <a href="#">Cursos</a>
+                <a href="#">Profesores</a>
+                <a href="#">Noticias</a>
+                <a href="#">Contacto</a>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+        </div>
+        <div class="copyright">
+            copyright @2026
+            <a href="#">Primero de Mayo</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

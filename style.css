@@ -453,12 +453,19 @@ nav li a:hover {
 .tabla-wrapper {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.5s ease;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: max-height 0.7s ease,
+                opacity 0.5s ease,
+                transform 0.5s ease;
+        
 }
 
 .tabla-wrapper.active {
     max-height: 1000px; 
     margin-top: 25px;
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .tabla {
@@ -834,6 +841,7 @@ nav li a:hover {
 .quizSection {
     text-align: center;
     padding: 80px 20px;
+    box-shadow: 3px 3px 7px #33333364;
 }
 
 .quiz-container {
@@ -951,7 +959,7 @@ nav li a:hover {
     padding: 25px;
     transform: scale(0.9) translateY(30px);
     opacity: 0;
-    transition: all 0.35s ease;
+    transition: all 0.6s ease;
 }
 
 #quizOverlay.active #quizSection {
@@ -1052,60 +1060,56 @@ nav li a:hover {
     margin: 0;
 }
 
-
-
-
-
 .accordion {
-  width: 100%;
-  max-width: 900px;
-  margin: 0 auto;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .accordion-btn {
     display: block;
     margin: 0 auto;
-  width: 250px;
-  padding: 12px;
-  font-size: 16px;
-  font-weight: bold;
-  border: none;
-  cursor: pointer;
-  text-align: center;
-  border-radius: 9px;
-  background: transparent;
-  transition: 0.3s;
+    width: 250px;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 9px;
+    background: transparent;
+    transition: 0.3s;
 }
 
 .accordion-btn:hover {
-  background: #91AD34;
+    background: #91AD34;
 }
 
 .accordion-content {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.4s ease;
-  margin-top: 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    margin-top: 10px;
 }
 
 .accordion-content.active {
-  max-height: 1000px;
+     max-height: 1000px;
 }
 
 .tabla {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 14px;
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
 }
 
 .tabla th,
 .tabla td {
-  border: 1px solid #22222225;
-  padding: 6px 8px;
+    border: 1px solid #22222225;
+    padding: 6px 8px;
 }
 
 .categoria {
-  width: 200px;
+    width: 200px;
 }
 
 .tabla .num {
@@ -1114,7 +1118,7 @@ nav li a:hover {
 
 
 .total td {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 .accordion-btn i {
@@ -1133,7 +1137,160 @@ nav li a:hover {
 
 
 
+/* Contact Form */
 
+.contactSection {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.contactContainer {
+    display: flex;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 3px 3px 15px #33333364;
+}
+
+.contactInfo {
+    width: 30%;
+    background: #fff;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contactInfo h2 {
+    margin-bottom: 30px;
+}
+
+.infoItem {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.infoItem i {
+    color: #91AD34;
+    font-size: 18px;
+}
+
+.socialIcons {
+    display: flex;
+    justify-content: space-between;
+    width: 120px;
+    margin: 40px auto 0;
+}
+
+.socialIcons i {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #91AD34;
+    border-radius: 9px;
+    color: #91AD34;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.socialIcons i:hover {
+    background: #91AD34;
+    color: #fff;
+}
+
+.contactForm {
+    width: 70%;
+    background: #f7f7f7;
+    padding: 40px;
+}
+
+.contactForm h2 {
+    margin-bottom: 30px;
+}
+
+.row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.inputBox {
+    position: relative;
+    width: 100%;
+}
+
+.inputBox input,
+.inputBox textarea {
+    width: 100%;
+    padding: 14px 10px;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 2px solid #ccc;
+    font-size: 14px;
+}
+
+.inputBox textarea {
+    height: 120px;
+    resize: none;
+}
+
+.inputBox label {
+    position: absolute;
+    left: 10px;
+    top: 14px;
+    color: #999;
+    font-size: 14px;
+    pointer-events: none;
+    transition: 0.3s ease;
+}
+
+.inputBox input:focus + label,
+.inputBox input:valid + label,
+.inputBox textarea:focus + label,
+.inputBox textarea:valid + label {
+    top: -10px;
+    font-size: 12px;
+    color: #91AD34;
+}
+
+.inputBox.full {
+    margin-bottom: 25px;
+}
+
+.contactForm button {
+    background: #91AD34;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 9px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.contactForm button:hover {
+    background: #7e972c;
+}
+
+@media (max-width: 768px) {
+    .contactContainer {
+        flex-direction: column;
+    }
+
+    .contactInfo,
+    .contactForm {
+        width: 100%;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+}
 
 
 
