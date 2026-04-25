@@ -16,8 +16,8 @@ function animateCounter(id, target, speed){
         }, speed)
     }
 
-animateCounter('courseCount', 800, 10);
-animateCounter('studentCount', 210, 20);
+animateCounter('courseCount', 150, 10);
+animateCounter('studentCount', 810, 20);
 
 
 

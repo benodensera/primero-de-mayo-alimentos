@@ -34,7 +34,7 @@ body::-webkit-scrollbar-thumb {
     border-width: thin;
     color: black;
     letter-spacing: 1px;
-    font-weight: 600;
+    font-weight: 500;
     border-color: #91AD34;
     border-style: solid;
 }
@@ -160,14 +160,11 @@ nav li a:hover {
     font-weight: bold;
 }
 
-#courseCount::after {
-  content: "+";
-  margin-left: 3px;
-}
-
+#courseCount::after, 
 #studentCount::after {
-    content: "+";
-    margin-left: 3px;
+  content: "+";
+  font-size: 1.5rem;
+  margin-left: 3px;
 }
 
 .counterText {
@@ -342,7 +339,7 @@ nav li a:hover {
     bottom: 15px;
     border: none;
     height: 1px;
-    background: #187b412a;
+    background: #187b4143;
     inset-inline: 0;
     margin-inline: auto;
 }
@@ -1364,5 +1361,30 @@ nav li a:hover {
 
 
 
+.teachers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    gap: 0 150px;
+}
+
+.teachers-title {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.coordinator .social-icons,
+.coordinator h3 {
+    margin-top: 15px;
+}
+
+.coordinator img {
+    height: 150px;
+}
+
+.coordinator h5 {
+    margin-top: 5px;
+}
 
 
