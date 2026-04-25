@@ -24,40 +24,43 @@ animateCounter('studentCount', 210, 20);
 const wrapper = document.getElementById('testimonialWrapper');
 const dots = document.querySelectorAll('.dot');
 
-let currentSlide = 0;
-const totalSlides = dots.length;
-let sliderInterval;
+if (wrapper && dots.length > 0) {
 
-function moveToSlide(index){
-    currentSlide = index;
+    let currentSlide = 0;
+    const totalSlides = dots.length;
+    let sliderInterval;
 
-    wrapper.style.transform = `translateX(-${index * 100}%)`;
+    function moveToSlide(index){
+        currentSlide = index;
 
-    dots.forEach(dot => dot.classList.remove('active'));
-    dots[index].classList.add('active');
-}
+        wrapper.style.transform = `translateX(-${index * 100}%)`;
 
-function startSlider(){
-    sliderInterval = setInterval(() => {
-        currentSlide = (currentSlide + 1) % totalSlides;
-        moveToSlide(currentSlide);
-    }, 5000);
-}
+        dots.forEach(dot => dot.classList.remove('active'));
+        dots[index].classList.add('active');
+    }
 
-function resetSlider(){
-    clearInterval(sliderInterval);
+    function startSlider(){
+        sliderInterval = setInterval(() => {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            moveToSlide(currentSlide);
+        }, 5000);
+    }
+
+    function resetSlider(){
+        clearInterval(sliderInterval);
+        startSlider();
+    }
+
+    dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+            moveToSlide(index);
+            resetSlider();
+        });
+    });
+
+    moveToSlide(0);
     startSlider();
 }
-
-dots.forEach((dot, index) => {
-    dot.addEventListener('click', () => {
-        moveToSlide(index);
-        resetSlider();
-    });
-});
-
-moveToSlide(0);
-startSlider();
 
 
 
@@ -232,24 +235,22 @@ restartBtn.addEventListener('click', () => {
 
 
 const openQuizBtn = document.getElementById('openQuizBtn');
-const quizOverlay = document.getElementById('quizOverlay');
 const closeQuizBtn = document.getElementById('closeQuizBtn');
 
-openQuizBtn.addEventListener('click', () => {
-    quizOverlay.classList.add('active');
-    document.getElementById('quizSection').classList.add('active');
-    document.body.style.overflow = 'hidden';
-});
+if (openQuizBtn && closeQuizBtn) {
+    openQuizBtn.addEventListener('click', () => {
+        quizOverlay.classList.add('active');
+        document.getElementById('quizSection').classList.add('active');
+        document.body.style.overflow = 'hidden';
+    });
 
-closeQuizBtn.addEventListener('click', () => {
-    quizOverlay.classList.remove('active');
-    document.getElementById('quizSection').classList.remove('active');
-
-    resetQuiz();
-
-    document.body.style.overflow = 'auto';
-    document.querySelector('.quiz-progress').style.display = 'block';
-});
+    closeQuizBtn.addEventListener('click', () => {
+        quizOverlay.classList.remove('active');
+        document.getElementById('quizSection').classList.remove('active');
+        resetQuiz();
+        document.body.style.overflow = 'auto';
+    });
+}
 
 
 function resetQuiz(){
@@ -285,38 +286,3 @@ function toggleTabla() {
 
 
 
-// Contact Form 
-
-const form = document.getElementById("contactForm");
-
-form.addEventListener("submit", async (e) => {
-    e.preventDefault();
-
-    const data = {
-        nombre: form[0].value,
-        apellido: form[1].value,
-        email: form[2].value,
-        celular: form[3].value,
-        mensaje: form[4].value
-    };
-
-    try {
-        const response = await fetch("https://formspree.io/f/xaqaygej", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify(data)
-        });
-
-        if (response.ok) {
-            alert("Mensaje enviado correctamente ✅");
-            form.reset();
-        } else {
-            alert("Error al enviar ❌");
-        }
-
-    } catch (error) {
-        alert("Error de conexión ❌");
-    }
-});

@@ -30,8 +30,8 @@ body::-webkit-scrollbar-thumb {
     padding: 9px 15px;
     font-size: 16px;
     background-color: transparent;
-    /*background: linear-gradient(349deg, #91AD34, #187B42);*/
     border-radius: 6px;
+    border-width: thin;
     color: black;
     letter-spacing: 1px;
     font-weight: 600;
@@ -160,6 +160,16 @@ nav li a:hover {
     font-weight: bold;
 }
 
+#courseCount::after {
+  content: "+";
+  margin-left: 3px;
+}
+
+#studentCount::after {
+    content: "+";
+    margin-left: 3px;
+}
+
 .counterText {
     font-size: 14px;
     color: #7c7878;
@@ -271,15 +281,21 @@ nav li a:hover {
 }
 
 .courses button {
-    height: 45px;
-    margin-top: 65px;
-    width: 80px;
+    height: 30px;
+    width: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
 }
 
 .courseSection {
     max-width: 1200px;
     margin: 90px auto;
+}
+
+.courseSection h1 span {
+    color: #91AD34;
 }
 
 .courses {
@@ -295,13 +311,14 @@ nav li a:hover {
     border-color: #187B42;
     border-style: solid;
     border-width: thin;
-    padding: 25px 25px 45px 25px;
+    padding: 25px 25px 35px 25px;
     border-radius: 9px;
     flex: 1 1 200px;
     text-align: left;
     color: #222;
     transition: 0.3s ease-in-out;
     box-shadow: 3px 3px 10px #33333364;
+    cursor: pointer;
 }
 
 .course:hover {
@@ -330,8 +347,24 @@ nav li a:hover {
     margin-inline: auto;
 }
 
+.course-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.course-button button i {
+    color: #222;
+}
+
+.course-button button:hover i {
+    color: #fff;
+}
+
 .browseAll {
-    margin-top: 10px;
+    margin-top: 9px;
+    font-size: 14px;
 }
 
 .aboutSection {
@@ -389,6 +422,7 @@ nav li a:hover {
 }
 
 .textBox button {
+    padding: 5px 12px;
     cursor: pointer;
 }
 
