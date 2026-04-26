@@ -1374,6 +1374,16 @@ nav li a:hover {
     margin-top: 50px;
 }
 
+.coordinator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 45px;  
+    border-radius: 9px;
+    box-shadow: 3px 3px 10px #33333364;
+}
+
 .coordinator .social-icons,
 .coordinator h3 {
     margin-top: 15px;
@@ -1388,3 +1398,50 @@ nav li a:hover {
 }
 
 
+
+.profile {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.profile h1 {
+    text-align: center;
+    margin: 35px 0;
+}
+
+.profile-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 0 auto 35px;
+    border-radius: 9px;
+    /*box-shadow: 1px 3px 6px rgba(51, 51, 51, 0.18);*/
+}
+
+.profile span {
+    margin-left: 35px;
+}
+
+.profile img {
+    height: 120px;
+}
+
+.profile-box span {
+    position: relative;
+    padding-left: 16px;
+}
+
+.profile-box span strong {
+    font-weight: 500;
+}
+
+.profile-box span::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    top: -7px;
+    color: #CD1319;
+    font-size: 30px;
+    line-height: 1;
+}
