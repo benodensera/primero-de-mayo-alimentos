@@ -30,6 +30,8 @@
                         <li><a href="./index.html">Inicio</a></li>
                         <li><a href="./teachers.html">Coordinador</a></li>
                         <li><a href="./profile.html">Perfil</a></li>
+                        <li><a href="./gallery.html">Galería</a></li>
+                        <li><a href="./infra.html">Infraestructura</a></li>
                         <li><a href="./contact.html" class="commonBtn">Contacto</a></li>
                     </ul>
                 </nav>
@@ -37,55 +39,35 @@
         </div>
     </header>
 
-    <section class="profile">
-        <h1 class="heading profile-title">
-            Perfil<span> Profesional</span>
-        </h1>
-        <div class="profile-box">
-            <span>Industrializar la <strong>leche</strong>, elaborando productos como:<br>
-                yogurt, manjar, queso, helados, requesón, postres lácteos, etc
-            </span>
-            <img src="./images/milk.png" alt="">
+    <section class="gallerySection">
+        <h1 class="heading">Galería de <span>Imágenes</span></h1>
+
+        <div class="galleryGrid">
+            <img src="images/about.jpg" alt="">
+            <img src="images/about.png" alt="">
+            <img src="images/about1.jpg" alt="">
+            <img src="images/health-bkg.png" alt="">
+            <img src="images/equipment-bkg.png" alt="">
+            <img src="images/research-bkg.png" alt="">
+            <img src="images/gallery7.jpg" alt="">
+            <img src="images/gallery8.jpg" alt="">
+            <img src="images/gallery9.jpg" alt="">
+            <img src="images/gallery10.jpg" alt="">
+            <img src="images/gallery11.jpg" alt="">
+            <img src="images/gallery12.jpg" alt="">
+            <img src="images/gallery13.jpg" alt="">
+            <img src="images/gallery14.jpg" alt="">
+            <img src="images/gallery15.jpg" alt="">
         </div>
-        <div class="profile-box">
-            <span>Industrializar la <strong>carne</strong> elaborando productos como:<br>
-                pollo ahumado, chorizos, jamón, mortadela, paté, etc
-            </span>
-            <img src="./images/meat.png" alt="">
+        <div class="lightbox" id="lightbox">
+            <span class="close" id="closeLightbox">&times;</span>
+
+            <button class="nav prev" id="prevBtn">&#10094;</button>
+
+            <img class="lightbox-img" id="lightboxImg">
+
+            <button class="nav next" id="nextBtn">&#10095;</button>
         </div>
-        <div class="profile-box">
-            <span>Industrializar <strong>frutas y vegetales</strong>, elaborando productos como:<br>
-                mermelada, néctar, encurtidos, jaleas, deshidratados, etc
-            </span>
-            <img src="./images/fruits.png" alt="">
-        </div>
-        <div class="profile-box">
-            <span>Realizar <strong>análisis</strong> básicos de materias primas y productos terminados
-            </span>
-            <img src="./images/analysis.png" alt="">
-        </div>
-        <div class="profile-box">
-            <span>Asegurar la <strong>higiene</strong> en alimentos y en procesos de fabricación 
-            </span>
-            <img src="./images/hygiene.png" alt="">
-        </div>
-        <div class="profile-box">
-            <span>Colaboración en grupos de <strong>investigación</strong>  
-            </span>
-            <img src="./images/research.png" alt="">
-        </div>
-        <div class="profile-box">
-            <span>Velar por el cumplimiento de normas de <strong>salubridad</strong> y seguridad<br>
-                que garanticen la integridad de personas y equipos  
-            </span>
-            <img src="./images/health.png" alt="">
-        </div>
-        <div class="profile-box">
-            <span>Operar eficazmente los <strong>equipos</strong>
-            </span>
-            <img src="./images/equipment.png" alt="">
-        </div>
-         
     </section>
 
     <footer class="footer">
@@ -112,7 +94,8 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    
+    <script src="./gallery.js"></script>
 
 </body>
 

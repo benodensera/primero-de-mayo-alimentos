@@ -1081,8 +1081,13 @@ nav li a:hover {
 
 .contactSection {
     max-width: 1200px;
-    margin: 50px auto;
-    padding: 20px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.contactSection h1 {
+    text-align: center;
+    margin: 50px 0;
 }
 
 .contactContainer {
@@ -1325,7 +1330,12 @@ nav li a:hover {
 
 .profile h1 {
     text-align: center;
-    margin: 35px 0;
+    margin: 50px 0;
+}
+
+.profile .profile-title span {
+    margin-left: 0;
+    color: #91AD34;
 }
 
 .profile-box {
@@ -1407,6 +1417,115 @@ nav li a:hover {
     background: #187b4143;
     inset-inline: 0;
     margin-inline: auto;
+}
+
+
+
+.gallerySection {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.gallerySection .heading span {
+    color: #91AD34;
+}
+
+.galleryGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.galleryGrid img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 3px 3px 10px #33333350;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.galleryGrid img:hover {
+    transform: scale(1.05);
+    box-shadow: 5px 5px 15px #33333370;
+}
+
+.lightbox {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    inset: 0;
+    background: rgba(255,255,255,0.95);
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.4s ease;
+    z-index: 99999;
+}
+
+.lightbox.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.lightbox-img {
+    width: 750px;
+    height: 420px;
+    object-fit: cover; 
+    background: #fff; 
+    border-radius: 12px;
+    box-shadow: 5px 5px 20px #00000030;
+}
+
+.nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 40px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: #333;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.nav:hover {
+    color: #91AD34;
+}
+
+.prev {
+    left: 30px;
+}
+
+.next {
+    right: 30px;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 35px;
+    cursor: pointer;
+    color: #333;
+}
+
+.close:hover {
+    color: #CD1319;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+.galleryGrid img,
+.lightbox-img {
+    background: #fff;
 }
 
 

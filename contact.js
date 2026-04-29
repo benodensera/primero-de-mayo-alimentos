@@ -1,5 +1,3 @@
-// CONTACT FORM JS (limpio y aislado)
-
 document.addEventListener("DOMContentLoaded", () => {
 
     const form = document.getElementById("contactForm");
@@ -26,11 +24,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 body: JSON.stringify(data)
             });
 
-            if (response.ok) {
-                // limpiar form
+            if (response.ok) {  
                 form.reset();
 
-                // redirección
                 window.location.href = "thanks.html";
             } else {
                 alert("Error al enviar ❌");
