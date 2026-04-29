@@ -60,8 +60,8 @@ header .container {
     background: white;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.9);
     width: 100%;
-    z-index: 9999;
     padding: 10px 100px;
+    z-index: 9999;
 }
 
 #mainHeader {
@@ -1370,8 +1370,13 @@ nav li a:hover {
 }
 
 .teachers-title {
+    font-size: 42px;
     text-align: center;
     margin: 50px 0;
+}
+
+.teachers-title span {
+    color: #91AD34;
 }
 
 .coordinator {
@@ -1393,8 +1398,14 @@ nav li a:hover {
     height: 150px;
 }
 
-.coordinator h5 {
-    margin-top: 5px;
+.coordinator h4 {
+    margin-bottom: 25px;
+    color: #7c7878;
+}
+
+.mission h1 {
+    text-align: center;
+    margin: 50px 0;
 }
 
 
@@ -1443,4 +1454,49 @@ nav li a:hover {
     color: #CD1319;
     font-size: 30px;
     line-height: 1;
+}
+
+
+
+.mission {
+    margin: 150px 0 90px 0;
+}
+
+.mission-content {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.mission-content h2 {
+    margin-bottom: 25px;
+}
+
+.mission-col {
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.mission-col h2 {
+    color: #4c4c4c;
+}
+
+.mission-col p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #7c7878;
+    line-height: 23px;
+}
+
+.mission-col hr {
+    width: 60%;
+    bottom: 15px;
+    border: none;
+    height: 1px;
+    margin-top: 21px;
+    background: #187b4143;
+    inset-inline: 0;
+    margin-inline: auto;
 }
