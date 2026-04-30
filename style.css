@@ -1351,8 +1351,10 @@ nav li a:hover {
     margin-left: 35px;
 }
 
-.profile img {
+.profile-box img {
+    width: 180px;
     height: 120px;
+    object-fit: cover; 
 }
 
 .profile-box span {
@@ -1481,6 +1483,10 @@ nav li a:hover {
     box-shadow: 5px 5px 20px #00000030;
 }
 
+.lightbox button i {
+    font-size: 21px;
+}
+
 .nav {
     position: absolute;
     top: 50%;
@@ -1499,11 +1505,15 @@ nav li a:hover {
 }
 
 .prev {
-    left: 30px;
+    left: 150px;
+}
+
+.prev i {
+    transform: rotate(180deg);
 }
 
 .next {
-    right: 30px;
+    right: 150px;
 }
 
 .close {
