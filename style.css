@@ -522,6 +522,33 @@ nav li a:hover {
     font-weight: bold;
 }
 
+.download-container {
+    display: none;
+}
+
+.tabla-wrapper.active + .download-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px 0 25px 0;
+}
+
+.download-btn {
+    text-decoration: none;
+    color: #222;
+}
+
+.download-btn:hover {
+    color: #91AD34;
+    transition: 0.3s ease;
+}
+
+.download-btn i {
+    font-size: 25px;
+
+}
+
 .testimonial-section {
     text-align: center;
     padding: 50px;
@@ -1321,6 +1348,23 @@ nav li a:hover {
     margin: 50px 0;
 }
 
+.doc-box h2 {
+    text-align: center;
+    margin: 25px 0;
+}
+
+.doc-box img {
+    display: flex   ;
+    height: 900px;
+    margin: 0 auto;
+}
+
+.doc-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
 
 
 .profile {

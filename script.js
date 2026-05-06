@@ -284,5 +284,3 @@ function toggleTabla() {
     tabla.classList.toggle("active");
 }
 
-
-
