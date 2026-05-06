@@ -1426,7 +1426,6 @@ nav li a:hover {
 .gallerySection {
     max-width: 1200px;
     margin: 50px auto;
-    padding: 20px;
     text-align: center;
 }
 
@@ -1537,6 +1536,108 @@ nav li a:hover {
 .lightbox-img {
     background: #fff;
 }
+
+
+
+.infra {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.infra-container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.infra-container p {
+    text-align: justify;
+    margin-bottom: 25px;
+    color: #7c7878;
+}
+
+.infra h4 {
+    color: #7c7878;
+}
+
+.infra-table-container {
+    padding: 10px;
+    background: transparent;
+}
+
+.infra-table {
+    width: 100%;
+    max-width: 800px; 
+    border-collapse: collapse; 
+    border: 1px solid #22222225;
+    border-radius: 9px;
+    margin: 50px auto;
+    overflow: hidden; 
+    border-style: hidden; 
+    box-shadow: 0 0 0 1px #22222225; 
+}
+
+.infra-table td {
+    border: 1px solid #22222225;
+    padding: 15px;
+    vertical-align: middle;
+    background: transparent;
+}
+
+.col-title {
+    width: 20%;
+    text-align: center; 
+}
+
+.col-list {
+    width: 30%;
+}
+
+.col-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    text-align: left;
+    color: #7c7878;
+}
+
+.col-list li::before {
+    content: "- ";
+    margin-right: 5px;
+}
+
+.col-image {
+    width: 50%;
+    text-align: center;
+}
+
+.col-image img {
+    max-width: 100%;
+    width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 9px;
+}
+
+.infra p {
+    max-width: 700px;
+    text-align: justify;
+    margin: 0 auto 50px;
+    color: #7c7878;
+}
+
+.infra-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px;
+    border-radius: 9px;
+    width: 720px;
+    height: 300px;
+    object-fit: cover;
+}
+
 
 
 
