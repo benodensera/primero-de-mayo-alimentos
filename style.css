@@ -315,7 +315,6 @@ nav li a:hover {
     color: #222;
     transition: 0.3s ease-in-out;
     box-shadow: 3px 3px 10px #33333364;
-    cursor: pointer;
 }
 
 .course:hover {
@@ -1366,7 +1365,6 @@ nav li a:hover {
     margin-top: 30px;
 }
 
-
 .profile {
     max-width: 1200px;
     margin: 0 auto;
@@ -1420,8 +1418,6 @@ nav li a:hover {
     line-height: 1;
 }
 
-
-
 .mission {
     margin: 150px 0 90px 0;
 }
@@ -1465,6 +1461,24 @@ nav li a:hover {
     margin-inline: auto;
 }
 
+.ina h2 {
+    text-align: center;
+    margin-top: 50px;
+}
+.ina-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.ina-container img {
+    height: 400px;
+    width: 700px;
+    object-fit: cover;
+    margin-top: 25px;
+    border-radius: 9px;
+}
 
 
 .gallerySection {
