@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primero de Mayo - Alimentos</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/297131ce3c.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <header>
+        <div id="mainHeader">
+            <div class="container">
+                <div class="logo">
+                    <img src="./images/logo 1 mayo.png" alt="" class="logoImg">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <strong class="title">Primero de Mayo</strong>
+                </div>
+                <nav>
+                    <div class="menu-toggle" onclick="toggleMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul id="menu">
+                        <li><a href="./index.html">Inicio</a></li>
+                        <li><a href="./general.html">General</a></li>
+                        <li><a href="./teachers.html">Coordinador</a></li>
+                        <li><a href="./profile.html">Perfil</a></li>
+                        <li><a href="./gallery.html">Galería</a></li>
+                        <li><a href="./infra.html">Infraestructura</a></li>
+                        <li><a href="./contact.html" class="commonBtn">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section id="quizOverlay">
+        <div class="quizSection" id="quizSection">
+            <button id="closeQuizBtn">✕</button>
+            <div class="quiz-container">
+                <div class="quiz-wrapper" id="quizWrapper">
+                    <div class="quiz-slide" data-correct="0">
+                        <h3>¿Cuál es la mejor forma de conservar frutas?</h3>
+                        <button class="quiz-option">Refrigerarlas</button>
+                        <button class="quiz-option">Dejarlas al sol</button>
+                        <button class="quiz-option">En bolsa abierta</button>
+                    </div>
+                    <div class="quiz-slide" data-correct="1">
+                        <h3>¿Qué método elimina bacterias?</h3>
+                        <button class="quiz-option">Congelar</button>
+                        <button class="quiz-option">Hervir</button>
+                        <button class="quiz-option">Secar</button>
+                    </div>
+                    <div class="quiz-slide" data-correct="1">
+                        <h3>¿Cuánto dura un alimento refrigerado?</h3>
+                        <button class="quiz-option">1 día</button>
+                        <button class="quiz-option">Depende del alimento</button>
+                        <button class="quiz-option">1 mes</button>
+                    </div>
+                    <div class="quiz-slide" id="resultSlide">
+                        <div id="resultsContainer"></div>
+                        <button id="restartQuizBtn" class="commonBtn">
+                            Rehacer test
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="quiz-controls">
+                <button id="prevBtn">← Regresar</button>
+                <button id="nextBtn">Siguiente →</button>
+                <button id="finishBtn" style="display:none;">Finalizar</button>
+            </div>
+            <div class="quiz-progress">
+                <div class="quiz-progress-bar" id="quizProgressBar"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hero" id="heroSection">
+        <div class="hero-text">
+            <h4>Bachillerato Técnico</h4>
+            <h1 class="heading heroHeading">
+                Conservación y<br><span>Procesamiento de Alimentos</span>
+            </h1>
+            <p>
+                Formación integral, infraestructura adecuada y una oferta académica diseñada para el desarrollo
+            </p>
+            <div class="stats">
+                <button class="commonBtn" id="openQuizBtn">
+                    Quiz
+                </button>
+                <div>
+                    <span id="courseCount">0</span><br>
+                    <span class="counterText">Estudiantes</span>
+                </div>
+                <div>
+                    <span id="studentCount">0</span><br>
+                    <span class="counterText">Egresados</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="images/user.png" class="userImage">
+            <img src="images/academic.png" class="heroIcon1">
+            <img src="images/students.png" class="heroIcon2">
+            <div class="circle-container">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="courseSection">
+        <h1 class="heading" data-aos="zoom-in">
+            Perfil<br><span>Profesional</span>
+        </h1>
+        <div class="courses" data-aos="fade-right">
+            <div class="course">
+                <i class="fa-solid fa-cheese"></i><br>
+                <span>Industrializar la leche elaborando productos derivados</span>
+                <hr>
+            </div>
+            <div class="course">
+                <i class="fa-solid fa-cow"></i><br>
+                <span>Industrializar la carne elaborando productos derivados</span>
+                <hr>
+            </div>
+            <div class="course">
+                <i class="fa-solid fa-carrot"></i><br>
+                <span>Industrializar frutas y vegetales, elaborando productos derivados</span>
+                <hr>
+            </div>
+            <div class="course">
+                <i class="fa-solid fa-microscope"></i><br>
+                <span>Realizar análisis básicos de materias primas y productos terminados</span>
+                <hr>
+            </div>
+            <div class="course-button">
+                <button class="commonBtn">
+                    <a href="./profile.html"><i class="fa-solid fa-arrow-right-long"></i></a>
+                </button>
+                <span class="browseAll">Ver Todos</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="aboutSection">
+        <div class="imageBox" data-aos="zoom-in">
+            <div class="boxCorner"></div>
+            <img src="images/about.jpg" alt="">
+        </div>
+        <div class="textBox" data-aos="fade-right">
+            <small>Acerca del Curso</small>
+            <h1 class="heading">Campo<br><span>Ocupacional</span></h1>
+            <ul class="custom-list">
+                <li>Industrial de conservación de alimentos frescos: supervisión en líneas de producción.</li>
+                <li>Industrias de fábricas de bebidas y productos alimentarios.</li>
+                <li>Asistencia en el aseguramiento de calidad, logística y ventas en empresas procesadoras de alimentos,
+                    bebidas y aditivos; diseñadoras y constructoras de equipos y sistemas de embalaje y envasado.</li>
+            </ul>
+            <a href="./profile.html"><button class="commonBtn">Ver Más</button></a>
+        </div>
+    </section>
+
+    <section class="newsSection">
+        <div class="newsTop">
+            <div class="newsText">
+                <h2>Plan de Estudios</h2>
+                <p>
+                    Revisa el pensum de estudios completo →
+                </p>
+            </div>
+            <button class="newsBtn" onclick="toggleTabla()">
+                <i class="fa-regular fa-hand-pointer"></i>
+                Ver Plan
+            </button>
+        </div>
+        <div id="tablaWrapper" class="tabla-wrapper">
+            <table class="tabla">
+                <tr>
+                    <th colspan="2" rowspan="2">
+                        Total periodos pedagógicos tronco común
+                    </th>
+                    <th>1ro</th>
+                    <th>2do</th>
+                    <th>3ro</th>
+                </tr>
+                <tr>
+                    <th class="num">19</th>
+                    <th class="num">19</th>
+                    <th class="num">19</th>
+                </tr>
+                <tr>
+                    <td rowspan="3">Módulos Genéricos de la Familia Profesional</td>
+                    <td>Seguridad Industrial</td>
+                    <td class="num">2</td>
+                    <td class="num">2</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Procesos Industriales Sostenibles</td>
+                    <td class="num">2</td>
+                    <td class="num">2</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Dibujo Técnico Aplicado</td>
+                    <td class="num">2</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td rowspan="6">Módulos Especialización</td>
+                    <td>Nutrientes de los alimentos</td>
+                    <td class="num">4</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Métodos de conservación</td>
+                    <td class="num">4</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Gestión de calidad y seguridad alimentaria</td>
+                    <td class="num">4</td>
+                    <td class="num">2</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Procesamiento de cárnicos</td>
+                    <td></td>
+                    <td class="num">4</td>
+                    <td class="num">6</td>
+                </tr>
+                <tr>
+                    <td>Procesamiento de lácteos</td>
+                    <td></td>
+                    <td class="num">4</td>
+                    <td class="num">6</td>
+                </tr>
+                <tr>
+                    <td>Procesamiento de frutas y verduras</td>
+                    <td></td>
+                    <td class="num">4</td>
+                    <td class="num">6</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Módulo práctico/experimental</td>
+                    <td class="num">3</td>
+                    <td class="num">3</td>
+                    <td class="num">3</td>
+                </tr>
+                <tr class="total">
+                    <td colspan="2">Total de periodos pedagógicos de formación técnica</td>
+                    <td class="num">21</td>
+                    <td class="num">21</td>
+                    <td class="num">21</td>
+                </tr>
+            </table>
+        </div>
+        <div class="download-container">
+            <a href="./images/resolucion-administrativa.png" download="Resolucion" class="download-btn">
+                <i class="fa-solid fa-file-arrow-down"></i>
+                <span>Resolución Administrativa
+            </span>
+            </a>
+        </div>
+    </section>
+
+    <section class="testimonial-section">
+        <small data-aos="zoom-in">Reseñas Destacadas</small>
+        <h2 class="heading" data-aos="zoom-in">Reseñas de <span>Estudiantes y Graduados</span></h2>
+        <div class="testimonial-container" data-aos="fade-right">
+            <div class="testimonial-wrapper" id="testimonialWrapper">
+                <div class="testimonial">
+                    <div class="top-section">
+                        <div class="image">
+                            <img src="images/testimonial-1.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h3>Lorena Hidalgo 1</h3>
+                            <p class="position">Emprendedora</p>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="quote-icon1">
+                                <i class="fa-solid fa-quote-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Antes desperdiciaba mucha comida porque no sabía cómo
+                        guardarla bien, pero ahora todo me dura fresco
+                    </p>
+                </div>
+                <div class="testimonial">
+                    <div class="top-section">
+                        <div class="image">
+                            <img src="images/testimonial-2.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h3>Lorena Hidalgo 2</h3>
+                            <p class="position">Emprendedora</p>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="quote-icon1">
+                                <i class="fa-solid fa-quote-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Antes desperdiciaba mucha comida porque no sabía cómo
+                        guardarla bien, pero ahora todo me dura fresco
+                    </p>
+                </div>
+                <div class="testimonial">
+                    <div class="top-section">
+                        <div class="image">
+                            <img src="images/testimonial-3.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h3>Lorena Hidalgo 3</h3>
+                            <p class="position">Emprendedora</p>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="quote-icon1">
+                                <i class="fa-solid fa-quote-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Antes desperdiciaba mucha comida porque no sabía cómo
+                        guardarla bien, pero ahora todo me dura fresco
+                    </p>
+                </div>
+                <div class="testimonial">
+                    <div class="top-section">
+                        <div class="image">
+                            <img src="images/testimonial-4.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h3>Lorena Hidalgo 4</h3>
+                            <p class="position">Emprendedora</p>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="quote-icon1">
+                                <i class="fa-solid fa-quote-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Antes desperdiciaba mucha comida porque no sabía cómo
+                        guardarla bien, pero ahora todo me dura fresco
+                    </p>
+                </div>
+            </div>
+            <div class="dots">
+                <span class="dot active" onclick="moveToSlide(0)"></span>
+                <span class="dot" onclick="moveToSlide(1)"></span>
+            </div>
+        </div>
+    </section>
+
+    <section class="specialist-section">
+        <div class="specialist-container">
+            <div class="specialist-image" data-aos="fade-right">
+                <img src="images/specialist.jpg" alt="">
+            </div>
+            <div class="specialist-content" data-aos="fade-left">
+                <h1 class="heading">Conviértete en un <span>Especialista</span></h1>
+                <p>
+                    Profesional técnico o ingeniero (tecnólogo de alimentos)
+                    enfocado en garantizar la seguridad, calidad, inocuidad y
+                    vida útil de los productos.
+                </p>
+                <a href="./contact.html" class="commonBtn">Empieza hoy!</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-bottom">
+            <div class="footer-logo">
+                <i class="fa-solid fa-location-dot"></i>
+                <h4>Yantzaza</h4>
+            </div>
+            <div class="footer-links">
+                <a href="./index.html">Inicio</a>
+                <a href="./teachers.html">Coordinador</a>
+                <a href="./profile.html">Perfil</a>
+                <a href="./gallery.html">Galería</a>
+                <a href="./infra.html">Infraestructura</a>
+                <a href="./contact.html">Contacto</a>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/p/Colegio-de-Bachillerato-Primero-de-Mayo-100065199082538/"
+                    target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <!--  <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>-->
+            </div>
+        </div>
+        <div class="copyright">
+            copyright @2026
+            <a href="#">Primero de Mayo</a>
+        </div>
+    </footer>
+
+    <button id="backToTop">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

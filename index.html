@@ -28,6 +28,7 @@
                     </div>
                     <ul id="menu">
                         <li><a href="./index.html">Inicio</a></li>
+                        <li><a href="./general.html">General</a></li>
                         <li><a href="./teachers.html">Coordinador</a></li>
                         <li><a href="./profile.html">Perfil</a></li>
                         <li><a href="./gallery.html">Galería</a></li>
@@ -39,366 +40,68 @@
         </div>
     </header>
 
-    <section id="quizOverlay">
-        <div class="quizSection" id="quizSection">
-            <button id="closeQuizBtn">✕</button>
-            <div class="quiz-container">
-                <div class="quiz-wrapper" id="quizWrapper">
-                    <div class="quiz-slide" data-correct="0">
-                        <h3>¿Cuál es la mejor forma de conservar frutas?</h3>
-                        <button class="quiz-option">Refrigerarlas</button>
-                        <button class="quiz-option">Dejarlas al sol</button>
-                        <button class="quiz-option">En bolsa abierta</button>
-                    </div>
-                    <div class="quiz-slide" data-correct="1">
-                        <h3>¿Qué método elimina bacterias?</h3>
-                        <button class="quiz-option">Congelar</button>
-                        <button class="quiz-option">Hervir</button>
-                        <button class="quiz-option">Secar</button>
-                    </div>
-                    <div class="quiz-slide" data-correct="1">
-                        <h3>¿Cuánto dura un alimento refrigerado?</h3>
-                        <button class="quiz-option">1 día</button>
-                        <button class="quiz-option">Depende del alimento</button>
-                        <button class="quiz-option">1 mes</button>
-                    </div>
-                    <div class="quiz-slide" id="resultSlide">
-                        <div id="resultsContainer"></div>
-                        <button id="restartQuizBtn" class="commonBtn">
-                            Rehacer test
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="quiz-controls">
-                <button id="prevBtn">← Regresar</button>
-                <button id="nextBtn">Siguiente →</button>
-                <button id="finishBtn" style="display:none;">Finalizar</button>
-            </div>
-            <div class="quiz-progress">
-                <div class="quiz-progress-bar" id="quizProgressBar"></div>
-            </div>
+    <section class="principal">
+        <div class="principal-container">
+            <img src="./images/logo 1 mayo.png" alt="" class="logo">
+            <h1>Unidad Educativa "Primero de Mayo"</h1>
         </div>
-    </section>
+        <div class="pic">
+            <img src="./images/david-ayora.png" alt="">
+            <h3>Gerente Elvis Gaona</h3>
+            <h4>RECTOR(E)</h4>
+        </div>
+        <p>
+            Bienvenidos a la <strong>Unidad Educativa Primero de Mayo</strong>, un espacio de formación donde
+            cada estudiante es protagonista de su propio crecimiento. Aquí cultivamos no solo
+            conocimientos académicos, sino también valores humanos, disciplina, creatividad y
+            sentido de comunidad.
+            <br><br>
+            Con más de <strong>1.300 estudiantes</strong>, nuestra institución se consolida como un centro educativo
+            vibrante,
+            diverso y comprometido con la excelencia. Cada año, cientos de jóvenes confían en sus sueños en
+            nuestras aulas para prepararse para un futuro brillante.
+            <br><br>
+            <strong>Nuestras Especialidades / Áreas Técnicas</strong><br><br>
+            <strong>&bull; Técnica Agropecuaria</strong><br>
+            Guiamos a nuestros estudiantes en proyectos prácticos de agricultura, producción animal y uso sostenible de
+            recursos,
+            formando profesionales capaces de contribuir al desarrollo rural y ambiental.<br><br>
+            <strong>&bull; Informática</strong><br>
+            Formamos jóvenes con dominio de herramientas digitales, programación, redes y tecnologías modernas,
+            preparándolos
+            para un mundo cada vez más conectado.<br><br>
+            <strong>&bull; Contabilidad</strong><br>
+            Preparamos a nuestros alumnos en gestión financiera, registros contables, administración y emprendimiento,
+            dándoles
+            las bases para asumir retos empresariales con responsabilidad.<br><br>
+            <strong>&bull; Bachillerato General Unificado (BGU)</strong><br>
+            ofrece una formación integral, científica y humanística, para que nuestros estudiantes estén listos para
+            acceder a
+            la universidad o emprender su propio camino con criterio y liderazgo.<br><br>
+            <strong>¿Por qué elegir la Unidad Educativa Primero de Mayo?</strong><br>
+            &nbsp; &bull; Somos una comunidad donde el aprendizaje va de la mano con el respeto y la solidaridad.<br>
+            &nbsp; &bull; Impulsamos proyectos que promueven la innovación, la responsabilidad social y la
+            sostenibilidad.<br>
+            &nbsp; &bull; Fomentamos el trabajo colaborativo entre estudiantes, docentes y familias.<br>
+            &nbsp; &bull; Brindamos orientación vocacional para que cada estudiante descubra su pasión y su
+            talento.<br><br>
+            <strong>¡Únete a nuestra comunidad educativa!</strong><br>
+            En la Unidad Educativa Primero de Mayo transformamos sueños en acciones, conocimiento en poder y valores en
+            la vida.
+        </p>
+        <p>
+            <strong>Ubicación:</strong> Calle Iván Riofrío, entre 13 de Abril y 22 de Noviembre<br>
+            <strong>Teléfono Institucional:</strong> 2300165
+        </p>
+        <p>
+            La Unidad Educativa “Primero de Mayo” tiene como misión formar bachilleres ávidos de conocimiento,
+            para crear un mundo mejor y más pacífico; solidarios, críticos, competentes, emprendedores, comprometidos
+            con los valores morales.<br><br>
 
-    <section class="hero" id="heroSection">
-        <div class="hero-text">
-            <h4>Bachillerato Técnico</h4>
-            <h1 class="heading heroHeading">
-                Conservación y<br><span>Procesamiento de Alimentos</span>
-            </h1>
-            <p>
-                Formación integral, infraestructura adecuada y una oferta académica diseñada para el desarrollo
-            </p>
-            <div class="stats">
-                <button class="commonBtn" id="openQuizBtn">
-                    Quiz
-                </button>
-                <div>
-                    <span id="courseCount">0</span><br>
-                    <span class="counterText">Estudiantes</span>
-                </div>
-                <div>
-                    <span id="studentCount">0</span><br>
-                    <span class="counterText">Egresados</span>
-                </div>
-            </div>
-        </div>
-        <div class="hero-image">
-            <img src="images/user.png" class="userImage">
-            <img src="images/academic.png" class="heroIcon1">
-            <img src="images/students.png" class="heroIcon2">
-            <div class="circle-container">
-                <div class="circle"></div>
-                <div class="circle"></div>
-                <div class="circle"></div>
-            </div>
-        </div>
-    </section>
-
-    <section class="courseSection">
-        <h1 class="heading" data-aos="zoom-in">
-            Perfil<br><span>Profesional</span>
-        </h1>
-        <div class="courses" data-aos="fade-right">
-            <div class="course">
-                <i class="fa-solid fa-cheese"></i><br>
-                <span>Industrializar la leche elaborando productos derivados</span>
-                <hr>
-            </div>
-            <div class="course">
-                <i class="fa-solid fa-cow"></i><br>
-                <span>Industrializar la carne elaborando productos derivados</span>
-                <hr>
-            </div>
-            <div class="course">
-                <i class="fa-solid fa-carrot"></i><br>
-                <span>Industrializar frutas y vegetales, elaborando productos derivados</span>
-                <hr>
-            </div>
-            <div class="course">
-                <i class="fa-solid fa-microscope"></i><br>
-                <span>Realizar análisis básicos de materias primas y productos terminados</span>
-                <hr>
-            </div>
-            <div class="course-button">
-                <button class="commonBtn">
-                    <a href="./profile.html"><i class="fa-solid fa-arrow-right-long"></i></a>
-                </button>
-                <span class="browseAll">Ver Todos</span>
-            </div>
-        </div>
-    </section>
-
-    <section class="aboutSection">
-        <div class="imageBox" data-aos="zoom-in">
-            <div class="boxCorner"></div>
-            <img src="images/about.jpg" alt="">
-        </div>
-        <div class="textBox" data-aos="fade-right">
-            <small>Acerca del Curso</small>
-            <h1 class="heading">Campo<br><span>Ocupacional</span></h1>
-            <ul class="custom-list">
-                <li>Industrial de conservación de alimentos frescos: supervisión en líneas de producción.</li>
-                <li>Industrias de fábricas de bebidas y productos alimentarios.</li>
-                <li>Asistencia en el aseguramiento de calidad, logística y ventas en empresas procesadoras de alimentos,
-                    bebidas y aditivos; diseñadoras y constructoras de equipos y sistemas de embalaje y envasado.</li>
-            </ul>
-            <a href="./profile.html"><button class="commonBtn">Ver Más</button></a>
-        </div>
-    </section>
-
-    <section class="newsSection">
-        <div class="newsTop">
-            <div class="newsText">
-                <h2>Plan de Estudios</h2>
-                <p>
-                    Revisa el pensum de estudios completo →
-                </p>
-            </div>
-            <button class="newsBtn" onclick="toggleTabla()">
-                <i class="fa-regular fa-hand-pointer"></i>
-                Ver Plan
-            </button>
-        </div>
-        <div id="tablaWrapper" class="tabla-wrapper">
-            <table class="tabla">
-                <tr>
-                    <th colspan="2" rowspan="2">
-                        Total periodos pedagógicos tronco común
-                    </th>
-                    <th>1ro</th>
-                    <th>2do</th>
-                    <th>3ro</th>
-                </tr>
-                <tr>
-                    <th class="num">19</th>
-                    <th class="num">19</th>
-                    <th class="num">19</th>
-                </tr>
-                <tr>
-                    <td rowspan="3">Módulos Genéricos de la Familia Profesional</td>
-                    <td>Seguridad Industrial</td>
-                    <td class="num">2</td>
-                    <td class="num">2</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Procesos Industriales Sostenibles</td>
-                    <td class="num">2</td>
-                    <td class="num">2</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Dibujo Técnico Aplicado</td>
-                    <td class="num">2</td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td rowspan="6">Módulos Especialización</td>
-                    <td>Nutrientes de los alimentos</td>
-                    <td class="num">4</td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Métodos de conservación</td>
-                    <td class="num">4</td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Gestión de calidad y seguridad alimentaria</td>
-                    <td class="num">4</td>
-                    <td class="num">2</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Procesamiento de cárnicos</td>
-                    <td></td>
-                    <td class="num">4</td>
-                    <td class="num">6</td>
-                </tr>
-                <tr>
-                    <td>Procesamiento de lácteos</td>
-                    <td></td>
-                    <td class="num">4</td>
-                    <td class="num">6</td>
-                </tr>
-                <tr>
-                    <td>Procesamiento de frutas y verduras</td>
-                    <td></td>
-                    <td class="num">4</td>
-                    <td class="num">6</td>
-                </tr>
-                <tr>
-                    <td colspan="2">Módulo práctico/experimental</td>
-                    <td class="num">3</td>
-                    <td class="num">3</td>
-                    <td class="num">3</td>
-                </tr>
-                <tr class="total">
-                    <td colspan="2">Total de periodos pedagógicos de formación técnica</td>
-                    <td class="num">21</td>
-                    <td class="num">21</td>
-                    <td class="num">21</td>
-                </tr>
-            </table>
-        </div>
-        <div class="download-container">
-            <a href="./images/resolucion-administrativa.png" download="Resolucion" class="download-btn">
-                <i class="fa-solid fa-file-arrow-down"></i>
-                <span>Resolución Administrativa
-            </span>
-            </a>
-        </div>
-    </section>
-
-    <section class="testimonial-section">
-        <small data-aos="zoom-in">Reseñas Destacadas</small>
-        <h2 class="heading" data-aos="zoom-in">Reseñas de <span>Estudiantes y Graduados</span></h2>
-        <div class="testimonial-container" data-aos="fade-right">
-            <div class="testimonial-wrapper" id="testimonialWrapper">
-                <div class="testimonial">
-                    <div class="top-section">
-                        <div class="image">
-                            <img src="images/testimonial-1.jpg" alt="">
-                        </div>
-                        <div class="info">
-                            <h3>Lorena Hidalgo 1</h3>
-                            <p class="position">Emprendedora</p>
-                            <div class="stars">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                            <div class="quote-icon1">
-                                <i class="fa-solid fa-quote-right"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <p>Antes desperdiciaba mucha comida porque no sabía cómo
-                        guardarla bien, pero ahora todo me dura fresco
-                    </p>
-                </div>
-                <div class="testimonial">
-                    <div class="top-section">
-                        <div class="image">
-                            <img src="images/testimonial-2.jpg" alt="">
-                        </div>
-                        <div class="info">
-                            <h3>Lorena Hidalgo 2</h3>
-                            <p class="position">Emprendedora</p>
-                            <div class="stars">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                            <div class="quote-icon1">
-                                <i class="fa-solid fa-quote-right"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <p>Antes desperdiciaba mucha comida porque no sabía cómo
-                        guardarla bien, pero ahora todo me dura fresco
-                    </p>
-                </div>
-                <div class="testimonial">
-                    <div class="top-section">
-                        <div class="image">
-                            <img src="images/testimonial-3.jpg" alt="">
-                        </div>
-                        <div class="info">
-                            <h3>Lorena Hidalgo 3</h3>
-                            <p class="position">Emprendedora</p>
-                            <div class="stars">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                            <div class="quote-icon1">
-                                <i class="fa-solid fa-quote-right"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <p>Antes desperdiciaba mucha comida porque no sabía cómo
-                        guardarla bien, pero ahora todo me dura fresco
-                    </p>
-                </div>
-                <div class="testimonial">
-                    <div class="top-section">
-                        <div class="image">
-                            <img src="images/testimonial-4.jpg" alt="">
-                        </div>
-                        <div class="info">
-                            <h3>Lorena Hidalgo 4</h3>
-                            <p class="position">Emprendedora</p>
-                            <div class="stars">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                            <div class="quote-icon1">
-                                <i class="fa-solid fa-quote-right"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <p>Antes desperdiciaba mucha comida porque no sabía cómo
-                        guardarla bien, pero ahora todo me dura fresco
-                    </p>
-                </div>
-            </div>
-            <div class="dots">
-                <span class="dot active" onclick="moveToSlide(0)"></span>
-                <span class="dot" onclick="moveToSlide(1)"></span>
-            </div>
-        </div>
-    </section>
-
-    <section class="specialist-section">
-        <div class="specialist-container">
-            <div class="specialist-image" data-aos="fade-right">
-                <img src="images/specialist.jpg" alt="">
-            </div>
-            <div class="specialist-content" data-aos="fade-left">
-                <h1 class="heading">Conviértete en un <span>Especialista</span></h1>
-                <p>
-                    Profesional técnico o ingeniero (tecnólogo de alimentos)
-                    enfocado en garantizar la seguridad, calidad, inocuidad y
-                    vida útil de los productos.
-                </p>
-                <a href="./contact.html" class="commonBtn">Empieza hoy!</a>
-            </div>
-        </div>
+            La Unidad Educativa "Primero de Mayo" tiene como visión ser líder del sistema educativo con reconocidos
+            programas de educación con el prestigio nacional e internacional en los campos científicos tecnológicos y
+            culturales que generen el desarrollo socio-económico de comunidad diversa e concluyente del cantón Yantzaza
+        </p>
     </section>
 
     <footer class="footer">
