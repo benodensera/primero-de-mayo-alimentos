@@ -175,6 +175,16 @@ nav li a:hover {
     margin-bottom: 12px;
 }
 
+.principal .gate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+    width: 720px;
+    height: 410px;
+    border-radius: 9px;
+    margin: 50px auto 0;
+}
 
 
 
@@ -1543,7 +1553,15 @@ nav li a:hover {
     margin-top: 40px;
 }
 
-.galleryGrid img {
+.gallery-item h4 {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #222;
+    text-align: center;
+}
+
+.gallery-item img {
     width: 100%;
     height: 220px;
     object-fit: cover;
@@ -1553,7 +1571,7 @@ nav li a:hover {
     cursor: pointer;
 }
 
-.galleryGrid img:hover {
+.gallery-item img:hover {
     transform: scale(1.05);
     box-shadow: 5px 5px 15px #33333370;
 }
@@ -1587,6 +1605,15 @@ nav li a:hover {
 
 .lightbox button i {
     font-size: 21px;
+}
+
+.lightbox-title {
+    position: absolute;
+    font-size: 24px;
+    font-weight: 600;
+    color: #222;
+    text-align: center;
+    bottom: 90px;
 }
 
 .nav {
@@ -1737,7 +1764,7 @@ nav li a:hover {
     margin: 0 auto 25px;
     border-radius: 9px;
     width: 720px;
-    height: 300px;
+    height: 330px;
     object-fit: cover;
 }
 
