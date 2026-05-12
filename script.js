@@ -67,7 +67,7 @@ if (wrapper && dots.length > 0) {
 const topBtn = document.getElementById('backToTop');
 window.onscroll = () => {
     if (topBtn) {
-        topBtn.style.display = window.scrollY > 2000 ? 'block' : 'none';
+        topBtn.style.display = window.scrollY > 1500 ? 'block' : 'none';
     }
 };
 
